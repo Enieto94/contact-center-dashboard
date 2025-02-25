@@ -15,20 +15,20 @@ const FiltroClientes = () => {
     const [tiempoEspera, setTiempoEspera] = useState('');
 
     useEffect(() => {
-        const tiempoParam = unwrappedSearchParams.get('tiempo_espera') || '';
+        const tiempoParam = unwrappedSearchParams.get('tiempo') || '';
         setTiempoEspera(tiempoParam);
     }, [unwrappedSearchParams]);
 
     const handleChange = (e) => {
-        const tiempo_espera = e.target.value;
-        setTiempoEspera(tiempo_espera);
+        const tiempo = e.target.value;
+        setTiempoEspera(tiempo);
 
         // Reconstruye los parámetros usando el objeto desempaquetado
         const params = new URLSearchParams(Object.fromEntries(unwrappedSearchParams.entries()));
-        if (tiempo_espera) {
-            params.set('tiempo_espera', tiempo_espera);
+        if (tiempo) {
+            params.set('tiempo', tiempo);
         } else {
-            params.delete('tiempo_espera');
+            params.delete('tiempo');
         }
         router.push(`/clientes?${params.toString()}`);
     };
