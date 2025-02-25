@@ -1,7 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Requirements
+<b>Node.js 20.x</b> or higher <br> 
+<b>Next.js 13.x</b> or higher
 ## Getting Started
 
+```bash
+git clone https://github.com/Enieto94/contact-center-dashboard.git
+
+npm i
+```
 First, run the development server:
 
 ```bash
