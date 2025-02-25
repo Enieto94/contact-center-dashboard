@@ -13,25 +13,23 @@ pnpm dev
 # or
 bun dev
 ```
+## Explicaciones
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Sustentación del desarrollo
+Se utilizó JSX para manejar más eficiencia en los componentes
+Se trabajó con functional components por su practicidad y mayor con mejores prácticas de código para su legibilidad.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Estructuración de componentes
+Los componentes se estructuraron como lista de los agentes y de clientes con sus respectivos filtros.
+Se ubicaron en este directorio ya que son elementos que son susceptibles a ser reutilizados y añadir alguna lógica diferente pero basada en la funcionalidad.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Diferencias modos de renderizar
+Podemos renderizar de varias maneras, bien sea con renderizado condicional (sentencias if else o operador ternario), Hooks, props y con funciones declaradas en el return statement.
+### Diferencias entre una MPA y SPA
+Las MPA por sus siglas en inglés son Multipage application lo que permite tener varias páginas con diferente contenido y enlazadas entre cada una, son generadas desde el servidor.
 
-## Learn More
+Las SPA por sus siglas en inglés Single Page Application es donde todo el contenido, estilos y lógica se almacenan en una sola página sin necesidad de recargar la página, aquí es donde entra en juego la renderización y el uso del DOM. Es muy flexible.
+### Cómo asegurarse que el frontend estuviera correctamente conectado con el backend
+Para asegurarnos de que el frontend esté correctamente conectado con el backend debemos asegurarnos de que nuestro backend funciona con postman. una vez hecho esto podemos consumir nuestros servicios con fetch hacia los endpoints creados en el backend desde nuestro frontend.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
